@@ -5,7 +5,8 @@ RUN echo "System dependencies" && \
     apk add --update curl make git bash vim ca-certificates && \
     echo "Ruby dependencies" && \
     apk add ruby ruby-io-console ruby-bundler && \
-    gem install aws-sdk && \
+    echo "Ruby Gem dependencies" && \
+    gem install rdoc aws-sdk && \
     echo "Python dependencies" && \
     apk add python py-pip openssl ca-certificates && \
     apk add --virtual build-dependencies \
@@ -25,4 +26,5 @@ RUN echo "System dependencies" && \
     mv terraform /usr/bin && \
     rm -f terraform_0.9.5_linux_amd64.zip && \
     echo "Cleanup" && \
-    apk del build-dependencies
+    apk del build-dependencies && \
+    rm -rf /var/cache/apk/*
