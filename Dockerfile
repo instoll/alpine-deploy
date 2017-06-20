@@ -6,7 +6,8 @@ RUN echo "System dependencies" && \
     echo "Ruby dependencies" && \
     apk add ruby ruby-io-console ruby-bundler && \
     echo "Ruby Gem dependencies" && \
-    gem install rdoc aws-sdk && \
+    echo 'gem: --no-document' >> ~/.gemrc && \
+    gem install aws-sdk && \
     echo "Python dependencies" && \
     apk add python py-pip openssl ca-certificates && \
     apk add --virtual build-dependencies \
