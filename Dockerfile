@@ -25,5 +25,4 @@ RUN echo "System dependencies" && \
     mv terraform /usr/bin && \
     rm -f terraform_0.9.5_linux_amd64.zip && \
     echo "Cleanup" && \
-    apk del build-dependencies && \
-    rm -rf /var/cache/apk/*
+    apk del build-dependencies
