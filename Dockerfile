@@ -1,5 +1,8 @@
 FROM alpine:3.3
 
+ENV TF_VERSION 0.10.7
+ENV TF_FILE    terraform_${TF_VERSION}_linux_amd64.zip
+
 # Install OS dependencies.
 RUN echo "System dependencies" && \
     apk add --update curl make git bash vim ca-certificates && \
@@ -22,10 +25,10 @@ RUN echo "System dependencies" && \
                 'MarkupSafe==0.23' && \
     echo "Terraform dependencies" && \
     cd /tmp && \
-    wget https://releases.hashicorp.com/terraform/0.9.5/terraform_0.9.5_linux_amd64.zip && \
-    unzip terraform_0.9.5_linux_amd64.zip && \
+    wget https://releases.hashicorp.com/terraform/${TF_VERSION}/${TF_FILE} && \
+    unzip ${TF_FILE} && \
     mv terraform /usr/bin && \
-    rm -f terraform_0.9.5_linux_amd64.zip && \
+    rm -f ${TF_FILE} && \
     echo "Cleanup" && \
     apk del build-dependencies && \
     rm -rf /var/cache/apk/*
