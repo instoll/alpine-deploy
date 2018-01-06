@@ -18,6 +18,7 @@ RUN echo "System dependencies" && \
     pip install --upgrade pip cffi && \
     echo "Ansible dependencies" && \
     pip install 'ansible==2.4.2.0' \
+                'awscli==1.14.19' \
                 'boto==2.48.0' \
                 'boto3==1.5.9' \
                 'docker-compose==1.18.0' \

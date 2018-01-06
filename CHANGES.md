@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.4.0
+
+- Feature: Installed awscli 1.14.19
+
 ## 0.3.0
 
 - Feature: Upgraded Terraform to 0.11.1
