@@ -6,6 +6,8 @@ ENV TF_FILE    terraform_${TF_VERSION}_linux_amd64.zip
 # Install OS dependencies.
 RUN echo "System dependencies" && \
     apk add --update curl make git bash vim ca-certificates && \
+    echo "Docker in Docker dependencies" && \
+    apk add docker && \
     echo "Ruby dependencies" && \
     apk add ruby ruby-io-console ruby-bundler && \
     echo "Ruby Gem dependencies" && \
