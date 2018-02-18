@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.5.0
+
+- Feature: Installed Docker for Docker-in-Docker build
+
 ## 0.4.0
 
 - Feature: Installed awscli 1.14.19
