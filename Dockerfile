@@ -1,6 +1,6 @@
-FROM alpine:3.3
+FROM alpine:3.7
 
-ENV TF_VERSION 0.11.1
+ENV TF_VERSION 0.11.3
 ENV TF_FILE    terraform_${TF_VERSION}_linux_amd64.zip
 
 # Install OS dependencies.

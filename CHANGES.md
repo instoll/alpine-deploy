@@ -2,6 +2,9 @@
 
 ## Next
 
+- Feature: Upgraded Terraform to 0.11.3
+- Feature: Upgraded Alpine to 3.7
+
 ## 0.5.0
 
 - Feature: Installed Docker for Docker-in-Docker build
