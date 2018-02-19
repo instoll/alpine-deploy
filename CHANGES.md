@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.7.0
+
+- Feature: Installed git to use consistent revision during deploy
+
 ## 0.6.0
 
 - Feature: Upgraded Terraform to 0.11.3
