@@ -2,8 +2,6 @@
 
 ## Next
 
-## 0.6.0
-
 - Feature: Upgraded Terraform to 0.11.3
 - Feature: Upgraded Alpine to 3.7
 
