@@ -9,7 +9,7 @@ RUN echo "System dependencies" && \
     echo "Docker in Docker dependencies" && \
     apk add docker git && \
     echo "Ruby dependencies" && \
-    apk add ruby ruby-io-console ruby-bundler && \
+    apk add ruby ruby-io-console ruby-bundler ruby-json && \
     echo "Ruby Gem dependencies" && \
     echo 'gem: --no-document' >> ~/.gemrc && \
     gem install aws-sdk && \
