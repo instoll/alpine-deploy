@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.8.0
+
+- Feature: Installed ruby-json package
+
 ## 0.7.0
 
 - Feature: Installed git to use consistent revision during deploy
