@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.9.0
+
+- Feature: Upgraded Terraform to 0.11.7
+
 ## 0.8.0
 
 - Feature: Installed ruby-json package
