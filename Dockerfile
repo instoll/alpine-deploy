@@ -23,8 +23,8 @@ RUN echo "System dependencies" && \
                 'awscli==1.16.6' \
                 'boto==2.49.0' \
                 'boto3==1.8.6' \
-                'docker-compose==1.18.0' \
-                'docker-py==1.10.6' \
+                'docker-compose==1.22.0' \
+                'docker==3.5.0' \
                 'MarkupSafe==0.23' && \
     echo "Terraform dependencies" && \
     cd /tmp && \

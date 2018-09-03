@@ -2,6 +2,11 @@
 
 ## Next
 
+## 0.10.1
+
+- Bugfix: Use docker 3.5.0 module to avoid docker-py collision
+- Feature: Upgraded docker-compose to 1.22.0
+
 ## 0.10.0
 
 - Feature: Upgraded Ansible to 2.6.3
