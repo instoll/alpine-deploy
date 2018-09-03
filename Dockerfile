@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-ENV TF_VERSION 0.11.7
+ENV TF_VERSION 0.11.8
 ENV TF_FILE    terraform_${TF_VERSION}_linux_amd64.zip
 
 # Install OS dependencies.
@@ -19,10 +19,10 @@ RUN echo "System dependencies" && \
       python-dev libffi-dev openssl-dev build-base && \
     pip install --upgrade pip cffi && \
     echo "Ansible dependencies" && \
-    pip install 'ansible==2.4.2.0' \
-                'awscli==1.14.19' \
-                'boto==2.48.0' \
-                'boto3==1.5.9' \
+    pip install 'ansible==2.6.3' \
+                'awscli==1.16.6' \
+                'boto==2.49.0' \
+                'boto3==1.8.6' \
                 'docker-compose==1.18.0' \
                 'docker-py==1.10.6' \
                 'MarkupSafe==0.23' && \
