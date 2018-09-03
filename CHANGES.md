@@ -2,6 +2,14 @@
 
 ## Next
 
+## 0.10.0
+
+- Feature: Upgraded Ansible to 2.6.3
+- Feature: Upgraded boto to 2.49.0
+- Feature: Upgraded boto3 to 1.8.6
+- Feature: Upgraded awscli to 1.16.6
+- Feature: Upgraded Terraform to 0.11.8
+
 ## 0.9.0
 
 - Feature: Upgraded Terraform to 0.11.7
