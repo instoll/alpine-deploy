@@ -2,6 +2,12 @@
 
 ## Next
 
+## 0.11.0
+
+- Feature: Upgraded terraform to 0.11.10
+- Feature: Upgraded pip packages to the latest versions
+- Feature: Upgraded alpine image to 3.8
+
 ## 0.10.1
 
 - Bugfix: Use docker 3.5.0 module to avoid docker-py collision
