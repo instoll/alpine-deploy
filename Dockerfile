@@ -1,6 +1,6 @@
-FROM alpine:3.7
+FROM alpine:3.8
 
-ENV TF_VERSION 0.11.8
+ENV TF_VERSION 0.11.10
 ENV TF_FILE    terraform_${TF_VERSION}_linux_amd64.zip
 
 # Install OS dependencies.
@@ -19,13 +19,13 @@ RUN echo "System dependencies" && \
       python-dev libffi-dev openssl-dev build-base && \
     pip install --upgrade pip cffi && \
     echo "Ansible dependencies" && \
-    pip install 'ansible==2.6.3' \
-                'awscli==1.16.6' \
+    pip install 'ansible==2.7.4' \
+                'awscli==1.16.69' \
                 'boto==2.49.0' \
-                'boto3==1.8.6' \
-                'docker-compose==1.22.0' \
-                'docker==3.5.0' \
-                'MarkupSafe==0.23' && \
+                'boto3==1.9.59' \
+                'docker-compose==1.23.2' \
+                'docker==3.6.0' \
+                'MarkupSafe==1.1.0' && \
     echo "Terraform dependencies" && \
     cd /tmp && \
     wget https://releases.hashicorp.com/terraform/${TF_VERSION}/${TF_FILE} && \
