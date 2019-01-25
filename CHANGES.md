@@ -2,7 +2,12 @@
 
 ## Next
 
-## 0.11.0
+## 1.12.0
+
+- Feature: Upgraded terraform to 0.11.11
+- Feature: Upgraded pip packages to the latest versions
+
+## 1.11.0
 
 - Feature: Upgraded terraform to 0.11.10
 - Feature: Upgraded pip packages to the latest versions
