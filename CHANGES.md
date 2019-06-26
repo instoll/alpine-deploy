@@ -2,6 +2,13 @@
 
 ## Next
 
+## 1.13.0
+
+- Feature: Upgraded Alpine to 3.10
+- Feature: Upgraded terraform to 0.12.3
+- Feature: Upgraded pip packages to the latest versions
+- Cleanup: Removed vim
+
 ## 1.12.0
 
 - Feature: Upgraded terraform to 0.11.11
