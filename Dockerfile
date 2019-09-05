@@ -1,6 +1,6 @@
 FROM alpine:3.10
 
-ENV TF_VERSION 0.12.3
+ENV TF_VERSION 0.12.8
 ENV TF_FILE    terraform_${TF_VERSION}_linux_amd64.zip
 
 # Install OS dependencies.
@@ -42,12 +42,12 @@ RUN echo "System dependencies" && \
       pip \
       pyyaml && \
     pip install \
-      ansible==2.8.1 \
-      awscli==1.16.186 \
+      ansible==2.8.4 \
+      awscli==1.16.232 \
       boto==2.49.0 \
-      boto3==1.9.176 \
-      docker-compose==1.23.1 \
-      docker==3.7.3 \
+      boto3==1.9.222 \
+      docker-compose==1.24.1 \
+      docker==4.0.2 \
       MarkupSafe==1.1.1 && \
     echo "Terraform dependencies" && \
     cd /tmp && \
