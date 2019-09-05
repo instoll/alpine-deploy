@@ -2,6 +2,10 @@
 
 ## Next
 
+## 1.14.0
+
+- Feature: Upgraded dependencies
+
 ## 1.13.0
 
 - Feature: Upgraded Alpine to 3.10
