@@ -2,6 +2,10 @@
 
 ## Next
 
+## 1.15.0
+
+- Feature: Upgraded dependencies
+
 ## 1.14.0
 
 - Feature: Upgraded dependencies
