@@ -2,6 +2,10 @@
 
 ## Next
 
+## 1.17.0
+
+- Feature: Installed openssh
+
 ## 1.16.0
 
 - Feature: Upgraded dependencies
