@@ -10,6 +10,7 @@ RUN echo "System dependencies" && \
         curl \
         git \
         make \
+        openssh \
         ca-certificates && \
     echo "Docker in Docker dependencies" && \
       apk add \
