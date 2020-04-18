@@ -2,6 +2,12 @@
 
 ## Next
 
+## 1.19.0
+
+- Feature: Installed Vault
+- Feature: Upgraded dependencies
+- Cleanup: Removed Ruby dependencies
+
 ## 1.18.0
 
 - Feature: Upgraded dependencies
