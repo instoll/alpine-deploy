@@ -12,6 +12,8 @@ RUN echo "System dependencies" && \
         bash \
         curl \
         git \
+        gnupg \
+        jq \
         make \
         openssh \
         ca-certificates && \
@@ -28,6 +30,9 @@ RUN echo "System dependencies" && \
         libffi-dev \
         openssl-dev \
         python3-dev && \
+    echo "Install yq" && \
+      wget https://github.com/mikefarah/yq/releases/download/3.3.0/yq_linux_amd64 -O /usr/bin/yq && \
+      chmod 0755 /usr/bin/yq && \
     echo "Symlink Python3 dependencies" && \
       ln -s /usr/bin/python3 /usr/bin/python && \
       ln -s /usr/bin/pip3 /usr/bin/pip && \

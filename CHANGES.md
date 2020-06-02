@@ -2,6 +2,10 @@
 
 ## Next
 
+## 1.20.0
+
+- Feature: Installed gnupg, jq and yq
+
 ## 1.19.0
 
 - Feature: Installed Vault
