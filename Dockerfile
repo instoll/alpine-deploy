@@ -1,14 +1,15 @@
 FROM alpine:3.10
 
-ENV TF_VERSION 0.12.24
+ENV TF_VERSION 0.12.26
 ENV TF_FILE    terraform_${TF_VERSION}_linux_amd64.zip
 
-ENV VAULT_VERSION 1.4.0
+ENV VAULT_VERSION 1.4.2
 ENV VAULT_FILE    vault_${VAULT_VERSION}_linux_amd64.zip
 
 # Install OS dependencies.
 RUN echo "System dependencies" && \
       apk add --update \
+        ack \
         bash \
         curl \
         git \
