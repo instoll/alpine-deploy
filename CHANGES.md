@@ -2,6 +2,12 @@
 
 ## Next
 
+## 1.21.0
+
+- Feature: Upgraded Python dependencies
+- Feature: Upgraded Terraform and Vault
+- Feature: Added ack
+
 ## 1.20.0
 
 - Feature: Installed gnupg, jq and yq

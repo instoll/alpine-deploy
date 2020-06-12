@@ -1,14 +1,15 @@
 FROM alpine:3.10
 
-ENV TF_VERSION 0.12.24
+ENV TF_VERSION 0.12.26
 ENV TF_FILE    terraform_${TF_VERSION}_linux_amd64.zip
 
-ENV VAULT_VERSION 1.4.0
+ENV VAULT_VERSION 1.4.2
 ENV VAULT_FILE    vault_${VAULT_VERSION}_linux_amd64.zip
 
 # Install OS dependencies.
 RUN echo "System dependencies" && \
       apk add --update \
+        ack \
         bash \
         curl \
         git \
@@ -42,10 +43,10 @@ RUN echo "System dependencies" && \
         pip \
         pyyaml && \
       pip --no-cache-dir install \
-        ansible==2.9.7 \
-        awscli==1.18.41 \
+        ansible==2.9.9 \
+        awscli==1.18.78 \
         boto==2.49.0 \
-        boto3==1.12.41 \
+        boto3==1.14.1 \
         docker-compose==1.25.5 \
         docker==4.2.0 && \
     echo "Terraform dependencies" && \
