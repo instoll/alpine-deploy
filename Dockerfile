@@ -43,10 +43,10 @@ RUN echo "System dependencies" && \
         pip \
         pyyaml && \
       pip --no-cache-dir install \
-        ansible==2.9.7 \
-        awscli==1.18.41 \
+        ansible==2.9.9 \
+        awscli==1.18.78 \
         boto==2.49.0 \
-        boto3==1.12.41 \
+        boto3==1.14.1 \
         docker-compose==1.25.5 \
         docker==4.2.0 && \
     echo "Terraform dependencies" && \
