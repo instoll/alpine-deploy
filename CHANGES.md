@@ -4,7 +4,8 @@
 
 ## 1.21.0
 
-- Feature: Upgrade Terraform and Vault
+- Feature: Upgraded Python dependencies
+- Feature: Upgraded Terraform and Vault
 - Feature: Added ack
 
 ## 1.20.0
