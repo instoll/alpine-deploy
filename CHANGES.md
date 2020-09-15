@@ -2,6 +2,11 @@
 
 ## Next
 
+## 1.22.0
+
+- Feature: Upgraded Terraform and Vault
+- Feature: Upgraded Python dependencies
+
 ## 1.21.0
 
 - Feature: Upgraded Python dependencies
