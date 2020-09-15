@@ -1,9 +1,9 @@
 FROM alpine:3.10
 
-ENV TF_VERSION 0.12.26
+ENV TF_VERSION 0.13.2
 ENV TF_FILE    terraform_${TF_VERSION}_linux_amd64.zip
 
-ENV VAULT_VERSION 1.4.2
+ENV VAULT_VERSION 1.5.3
 ENV VAULT_FILE    vault_${VAULT_VERSION}_linux_amd64.zip
 
 # Install OS dependencies.
@@ -32,7 +32,7 @@ RUN echo "System dependencies" && \
         openssl-dev \
         python3-dev && \
     echo "Install yq" && \
-      wget https://github.com/mikefarah/yq/releases/download/3.3.0/yq_linux_amd64 -O /usr/bin/yq && \
+      wget https://github.com/mikefarah/yq/releases/download/3.3.4/yq_linux_amd64 -O /usr/bin/yq && \
       chmod 0755 /usr/bin/yq && \
     echo "Symlink Python3 dependencies" && \
       ln -s /usr/bin/python3 /usr/bin/python && \
@@ -43,10 +43,10 @@ RUN echo "System dependencies" && \
         pip \
         pyyaml && \
       pip --no-cache-dir install \
-        ansible==2.9.9 \
-        awscli==1.18.78 \
+        ansible==2.9.13 \
+        awscli==1.18.138 \
         boto==2.49.0 \
-        boto3==1.14.1 \
+        boto3==1.14.61 \
         docker-compose==1.25.5 \
         docker==4.2.0 && \
     echo "Terraform dependencies" && \
