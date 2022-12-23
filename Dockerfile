@@ -1,6 +1,6 @@
 FROM alpine:3.10
 
-ENV TF_VERSION 0.13.2
+ENV TF_VERSION 1.3.6
 ENV TF_FILE    terraform_${TF_VERSION}_linux_amd64.zip
 
 ENV VAULT_VERSION 1.5.3

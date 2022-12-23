@@ -2,6 +2,10 @@
 
 ## Next
 
+## 1.23.0
+
+- Feature: Upgraded Terraform to 1.3.6
+
 ## 1.22.0
 
 - Feature: Upgraded Terraform and Vault
